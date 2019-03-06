@@ -47,7 +47,7 @@ Then we start Gazebo.
 
 ```
 # Shell B:
-ign-gazebo -r -f ../examples/worlds/camera_sensor.sdf
+ign-gazebo -r -f camera_sensor.sdf
 ```
 
 Gazebo should be running and publishing images over the `/camera` topic.
