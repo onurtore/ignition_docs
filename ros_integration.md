@@ -23,7 +23,13 @@ Not available yet.
 
 See the [prerequisites](https://github.com/osrf/ros1_ign_bridge#prerequisites)
 and [install section](https://github.com/osrf/ros1_ign_bridge#building-the-bridge-from-source)
-of the bridge documentation.
+of the bridge documentation. This tutorial requires Ubuntu Melodic or newer.
+
+Assuming that you have ROS Melodic, you can install all dependencies with:
+
+```
+sudo apt install ros-melodic-desktop ros-melodic-rqt-image-view libignition-common3-dev libignition-transport6-dev
+```
 
 # Run the bridge and exchange images
 
@@ -57,9 +63,8 @@ Then we start the parameter bridge with the previous topic.
 
 ```
 # Shell D:
-. /opt/ros/melodic/setup.bash
 . ~/bridge_ws/install/setup.bash
-parameter_bridge /camera@sensor_msgs/Image@ignition.msgs.Image
+rosrun ros1_ign_bridge parameter_bridge /camera@sensor_msgs/Image@ignition.msgs.Image
 ```
 
 Now we start the ROS 1 GUI:
