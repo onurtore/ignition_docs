@@ -27,6 +27,12 @@ Wireless receiver | :heavy_check_mark: |
 Wireless transceiver | :heavy_check_mark: |
 Wireless transmitter | :heavy_check_mark: |
 
+Sensor features | Gazebo-classic | Ignition Gazebo
+-- | -- | --
+Custom update rate | :heavy_check_mark: | Some sensors do, others need upgrading
+Gaussian noise | :heavy_check_mark: | Some sensors do, others need upgrading
+Custom sensors | :heavy_check_mark: | :heavy_check_mark:
+
 ## Plugins
 
 Plugin | Gazebo-classic | Ignition Gazebo
@@ -95,6 +101,62 @@ LookAtDemoPlugin | :heavy_check_mark: |
 TimerGUIPlugin | :heavy_check_mark: |
 GravityCompensationPlugin | :heavy_check_mark: |
 
+## GUI
 
+Feature | Gazebo-classic | Ignition Gazebo
+-- | -- | --
+Play / pause / step | :heavy_check_mark: | :heavy_check_mark:
+Reset world / models | :heavy_check_mark: |
+World stats | :heavy_check_mark: | :heavy_check_mark:
+Topic echo | :heavy_check_mark: | :heavy_check_mark:
+Image viewer | :heavy_check_mark: | :heavy_check_mark:
+Translate / rotate / scale models | :heavy_check_mark: |
+Insert models / lights | :heavy_check_mark: |
+Delete models | :heavy_check_mark: |
+World tree | :heavy_check_mark: |
+Log recording / playback | :heavy_check_mark: |
+Plotting | :heavy_check_mark: |
+Video recording | :heavy_check_mark: |
+Screenshot | :heavy_check_mark: |
+View angles | :heavy_check_mark: |
+Apply force / torque | :heavy_check_mark: |
+Introspection visualizations (transparent, joints...) | :heavy_check_mark: |
+Follow / move to | :heavy_check_mark: |
+Copy / paste | :heavy_check_mark: |
+Building editor | :heavy_check_mark: |
+Model editor | :heavy_check_mark: |
+FPS view control | :heavy_check_mark: |
+Orthographic projection | :heavy_check_mark: |
+Save world | :heavy_check_mark: |
+Save GUI configuration | :heavy_check_mark: | :heavy_check_mark:
+Color scheme and themes | :heavy_multiplication_x: | :heavy_check_mark:
+Position, resize and configure widgets | :heavy_multiplication_x: | :heavy_check_mark:
 
+## ROS integration
 
+ROS integration on Ignition will be done primarily via a
+[transport bridge](https://github.com/osrf/ros1_ign_bridge) instead of plugins.
+
+Feature | Gazebo-classic | Ignition Gazebo
+-- | -- | --
+TODO | |
+
+## Others
+
+Feature | Gazebo-classic | Ignition Gazebo
+-- | -- | --
+Nested models | :heavy_check_mark: | Partial support
+Log / playback | :heavy_check_mark: | Partial support
+Web client (GzWeb) | :heavy_check_mark: |
+Populations | :heavy_check_mark: |
+Actors | :heavy_check_mark: |
+Heightmaps | :heavy_check_mark: |
+Code introspection | :heavy_check_mark: | All simulation state is accessible from any system plugin, soon will be published
+World plugins | :heavy_check_mark: | :heavy_check_mark: Now called System plugin
+Model plugins | :heavy_check_mark: | :heavy_check_mark: Now called System plugin
+Sensor plugins | :heavy_check_mark: |
+Visual plugins | :heavy_check_mark: |
+GUI plugins | :heavy_check_mark: | :heavy_check_mark: Ignition GUI plugins
+System plugins | :heavy_check_mark: |
+Distribute simulation across processes | :heavy_multiplication_x: | :heavy_check_mark:
+Incrementally load levels | :heavy_multiplication_x: | :heavy_check_mark:
