@@ -134,12 +134,11 @@ Position, resize and configure widgets | :heavy_multiplication_x: | :heavy_check
 
 ## ROS integration
 
-ROS integration on Ignition will be done primarily via a
-[transport bridge](https://github.com/osrf/ros1_ign_bridge) instead of plugins.
+ROS integration with Ignition will be done primarily via a
+transport bridge instead of plugins.
 
-Feature | Gazebo-classic | Ignition Gazebo
--- | -- | --
-TODO | |
+* **ROS 1**: See full message list at [ros1_ign_bridge](https://github.com/osrf/ros1_ign_bridge)
+* **ROS 2**: TODO
 
 ## Others
 
