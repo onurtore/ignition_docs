@@ -132,6 +132,32 @@ Save GUI configuration | ✓ | ✓
 Color scheme and themes | ✕ | ✓
 Position, resize and configure widgets | ✕ | ✓
 
+## Physics
+
+In Ignition Physics, physics engines are integrated as plugins, so any engine
+can be integrated without changing the core source code, as it was the case
+in Gazebo.
+
+Feature | Gazebo-classic | Ignition Gazebo
+-- | -- | --
+ODE engine | ✓ |
+Bullet engine | ✓ |
+DART engine | ✓ | ✓ Plugin shipped with ign-physics
+Simbody engine | ✓ |
+Custom engine plugins | ✕ | ✓
+
+## Rendering
+
+In Ignition Rendering, render engines are integrated as plugins, so any engine
+can be integrated without changing the core source code.
+
+Feature | Gazebo-classic | Ignition Gazebo
+-- | -- | --
+Ogre 1.x engine | ✓ | ✓
+Ogre 2.x engine | ✕ | ✓
+Optix engine | ✕ | ✓ Partial support
+Custom engine plugins | ✕ | ✓
+
 ## ROS integration
 
 ROS integration with Ignition will be done primarily via a
@@ -150,7 +176,11 @@ Web client (GzWeb) | ✓ |
 Populations | ✓ |
 Actors | ✓ |
 Heightmaps | ✓ |
-Code introspection | ✓ | All simulation state is accessible from any system plugin, soon will be published
+DEM (Digital Elevation Models) | ✓ |
+COLLADA meshes | ✓ | ✓
+OBJ meshes | ✓ | ✓
+STL meshes | ✓ | ✓
+Code introspection | ✓ | All simulation state is accessible from any system plugin, soon it will be published
 World plugins | ✓ | ✓ Now called System plugin
 Model plugins | ✓ | ✓ Now called System plugin
 Sensor plugins | ✓ |
@@ -159,3 +189,5 @@ GUI plugins | ✓ | ✓ Ignition GUI plugins
 System plugins | ✓ |
 Distribute simulation across processes | ✕ | ✓
 Incrementally load levels | ✕ | ✓
+Online model database | [gazebo_models repository](https://bitbucket.org/osrf/gazebo_models/) | [Ignition Fuel](https://app.ignitionrobotics.org/fuel/models)
+
