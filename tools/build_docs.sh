@@ -38,12 +38,12 @@ if [[ $1 == 'blueprint' || $1 == 'Blueprint' ]]; then
   docker build -t ign-blueprint-docs -f Dockerfile.blueprint --build-arg IGN_VERSION_PASSWORD --build-arg IGN_VERSION_DATE=`date -Iseconds` --no-cache .
 fi
 
-if [[ $1 == 'all' || $1 == 'citadel' || $1 == 'Citadel' ]]; then
+if [[ $1 == 'citadel' || $1 == 'Citadel' ]]; then
   echo -e "\e[46m\e[30mUploading documentation for Citadel\e[0m\e[39m"
   docker build -t ign-citadel-docs -f Dockerfile.citadel --build-arg IGN_VERSION_PASSWORD --build-arg IGN_VERSION_DATE=`date -Iseconds` --no-cache .
 fi
 
-if [[ $1 == 'all' || $1 == 'dome' || $1 == 'Dome' ]]; then
+if [[ $1 == 'dome' || $1 == 'Dome' ]]; then
   echo -e "\e[46m\e[30mUploading documentation for Dome\e[0m\e[39m"
   docker build -t ign-dome-docs -f Dockerfile.dome --build-arg IGN_VERSION_PASSWORD --build-arg IGN_VERSION_DATE=`date -Iseconds` --no-cache .
 fi
