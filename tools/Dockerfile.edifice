@@ -42,7 +42,7 @@ RUN scripts/build_ign.sh ignitionrobotics ign-plugin ign-plugin1 y \
       $IGN_VERSION_DATE \
       $IGN_VERSION_PASSWORD; exit 0
 
-RUN scripts/build_ign.sh ignitionrobotics ign-common ign-common4 y \
+RUN scripts/build_ign.sh ignitionrobotics ign-common main y \
       $IGN_VERSION_DATE \
       $IGN_VERSION_PASSWORD; exit 0
 
@@ -52,38 +52,38 @@ RUN scripts/build_ign.sh ignitionrobotics ign-common ign-common4 y \
 #       $IGN_VERSION_DATE \
 #       $IGN_VERSION_PASSWORD; exit 0
 
-RUN scripts/build_ign.sh ignitionrobotics ign-msgs ign-msgs7 y \
+RUN scripts/build_ign.sh ignitionrobotics ign-msgs main y \
       $IGN_VERSION_DATE \
       $IGN_VERSION_PASSWORD; exit 0
 
-RUN scripts/build_ign.sh ignitionrobotics ign-transport ign-transport10 y \
+RUN scripts/build_ign.sh ignitionrobotics ign-transport main y \
       $IGN_VERSION_DATE \
       $IGN_VERSION_PASSWORD; exit 0
 
-RUN scripts/build_ign.sh ignitionrobotics ign-fuel-tools ign-fuel-tools6 y \
+RUN scripts/build_ign.sh ignitionrobotics ign-fuel-tools main y \
       $IGN_VERSION_DATE \
       $IGN_VERSION_PASSWORD; exit 0
 
-RUN scripts/build_ign.sh ignitionrobotics ign-rendering ign-rendering5 y \
+RUN scripts/build_ign.sh ignitionrobotics ign-rendering main y \
       $IGN_VERSION_DATE \
       $IGN_VERSION_PASSWORD; exit 0
 
-RUN scripts/build_ign.sh ignitionrobotics ign-sensors ign-sensors5 y \
+RUN scripts/build_ign.sh ignitionrobotics ign-sensors main y \
       $IGN_VERSION_DATE \
       $IGN_VERSION_PASSWORD; exit 0
 
-RUN scripts/build_ign.sh ignitionrobotics ign-gui ign-gui5 y \
+RUN scripts/build_ign.sh ignitionrobotics ign-gui main y \
       $IGN_VERSION_DATE \
       $IGN_VERSION_PASSWORD; exit 0
 
-RUN scripts/build_ign.sh ignitionrobotics ign-physics ign-physics4 y \
+RUN scripts/build_ign.sh ignitionrobotics ign-physics main y \
       $IGN_VERSION_DATE \
       $IGN_VERSION_PASSWORD; exit 0
 
-RUN scripts/build_ign.sh ignitionrobotics ign-gazebo ign-gazebo5 y \
+RUN scripts/build_ign.sh ignitionrobotics ign-gazebo main y \
       $IGN_VERSION_DATE \
       $IGN_VERSION_PASSWORD; exit 0
 
-RUN scripts/build_ign.sh ignitionrobotics ign-launch ign-launch4 y \
+RUN scripts/build_ign.sh ignitionrobotics ign-launch main y \
       $IGN_VERSION_DATE \
       $IGN_VERSION_PASSWORD; exit 0
