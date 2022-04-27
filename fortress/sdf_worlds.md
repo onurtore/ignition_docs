@@ -281,7 +281,7 @@ You should see the model in the origin of the world. You can also set its coordi
 
 ![world with can](tutorials/sdf_worlds/coke_world.png)
 
-Now that you have a custom world, the [next tutorial](sensors) will teach you how to add sensors to a robot to allow it to interact with the world around it.
+Now that you have a custom world, the [next tutorial](sensors.md) will teach you how to add sensors to a robot to allow it to interact with the world around it.
 
 ## Video walk-through
 
